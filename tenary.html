@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const billVal = Number(prompt('Import a number'));
+        const Tip20=(billVal*20)/100;
+        const Tip15= (billVal*15)/100;
+
+        // if(billVal>=50 && billval<=300){
+        //     return Tip15;
+        // }else
+        // return Tip20;
+        const tip= billVal>=50 && billVal<=300? Tip15 :Tip20;
+
+        console.log(`The bill value was ${billVal} and tip was ${tip} and total is ${billVal+tip}`)
+    </script>
+</body>
+</html>
